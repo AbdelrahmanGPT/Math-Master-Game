@@ -1,0 +1,7 @@
+﻿  Math Game.cpp
+C:\Users\AAMY\source\repos\Math Game\Math Game.cpp(76): warning C4715: 'NumberGenerator': not all control paths return a value
+C:\Users\AAMY\source\repos\Math Game\Math Game.cpp(115): warning C4715: 'OperationGenerator': not all control paths return a value
+C:\Users\AAMY\source\repos\Math Game\Math Game.cpp(130): warning C4715: 'GetQuestionDifficultyString': not all control paths return a value
+C:\Users\AAMY\source\repos\Math Game\Math Game.cpp(149): warning C4715: 'GetQuestionOperationTypeString': not all control paths return a value
+C:\Users\AAMY\source\repos\Math Game\Math Game.cpp(166): warning C4715: 'QuestionCalculator': not all control paths return a value
+  Math Game.vcxproj -> C:\Users\AAMY\source\repos\Math Game\x64\Debug\Math Game.exe
