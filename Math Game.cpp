@@ -1,5 +1,6 @@
 #include<iostream>
 #include<cstdlib>
+#include "ABODAstd.h"
 
 using namespace std;
 
@@ -10,40 +11,6 @@ struct GameResults {
 	int CorrectAnswers = 0;
 	int WrongAnswers = 0;
 };
-
-int RandomNumber(int From, int To)
-{
-	int RandNumber = rand() % (To - From + 1) + From;
-
-	return RandNumber;
-
-}
-
-int ReadPositiveNumber(string Message)
-{
-	int Number;
-	do {
-
-		cout << Message << "\n";
-		cin >> Number;
-
-	} while (Number <= 0);
-
-	return Number;
-}
-
-int ValidateNumberInRange(int From, int To , string Message)
-{
-	int Number;
-	do
-	{
-		cout << Message << "\n";
-		cin >> Number;
-
-	} while (Number < From || Number > To);
-
-	return Number;
-}
 
 int ReadNumberOfQuestions()
 {
@@ -229,29 +196,6 @@ void PrintGameResults(int NumberOfQuestions, Difficulty Difficulty, OperationTyp
 	cout << "NUMBER OF RIGHT ANSWERS : " << GameResult.CorrectAnswers << "\n";
 	cout << "NUMBER OF WRONG ANSWERS : " << GameResult.WrongAnswers << "\n";
 	cout << "\n_____________________________________\n\n";
-}
-
-bool DoYouWantToPlayAgain()
-{
-	string Choice;
-	do
-	{
-		cout << "DO YOU WANT TO PLAY AGAIN[Y/N]\n";
-		cin >> Choice;
-	} while (Choice != "Y" && Choice != "y" && Choice != "N" && Choice != "n");
-
-	if (Choice == "Y" || Choice == "y")
-	{
-		system("cls");
-		system("color 0F");
-		return 1;
-	}
-
-	else
-	{
-		cout << "\nGOOD BYE :)\n";
-		return 0;
-	}
 }
 
 void MathGame()
